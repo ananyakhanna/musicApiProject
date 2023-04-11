@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: fit-content;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: monospace, cursive;
+    transition: all .2s ease-in-out;
+    margin-bottom: 4rem;
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+    padding: 0 1rem;
+    /* border: 1px solid red; */
+    margin-top: 0.5rem;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+
+.image{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+}

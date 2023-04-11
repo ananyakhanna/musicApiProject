@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styleIndex.css' %}">
+    <title>Search Music</title>
+    
+</head>
+
+<body>
+    <div class="text-typing">
+        <p>Search Music</p>
+        <form action="{% url 'search_results' %}" method="get">
+            <input type="text" name="term" id="" class="input">
+            <button type="submit" value="search" class="button">Search</button>
+        </form>
+    </div>
+    <!-- {% if results %}
+    {% for i in results %}
+    <p>
+       <b>Artist Name: </b>{{i.artistName}}
+    </p>
+    <p>
+        <b>Collection Name: </b>{{i.collectionName}}
+    </p>
+    <hr>
+    {% endfor %}
+    {% elif results == '' %}
+    <h1>No results</h1>
+    {% else %}
+    <div></div>
+    {% endif %} -->
+</body>
+
+</html>
