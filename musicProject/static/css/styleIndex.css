@@ -1,9 +1,6 @@
 body {
     margin: 0px;
     height: 100vh;
-    /* display: flex;
-            align-items: center;
-            justify-content: center; */
     background: url('../images/index.jpg') no-repeat center/cover;
     background-attachment: fixed;
     box-sizing: border-box;
@@ -15,12 +12,10 @@ body {
     font-size: 35px;
     font-family: monospace;
     border-radius: 50px;
-    /* border: 1px solid red; */
     width: fit-content;
     height: fit-content;
     margin-left: 3rem;
     margin-top: 15rem;
-
 }
 
 .text-typing p {

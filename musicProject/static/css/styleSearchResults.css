@@ -1,12 +1,12 @@
-body{
+body {
     box-sizing: border-box;
 }
+
 .container {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     height: fit-content;
     justify-content: center;
-    /* border: 1px solid black; */
 }
 
 .card {
@@ -31,7 +31,6 @@ body{
     color: grey;
     font-size: 18px;
     padding: 0 1rem;
-    /* border: 1px solid red; */
     margin-top: 0.5rem;
 }
 
@@ -50,43 +49,40 @@ body{
 
 .a {
     text-decoration: none;
-    font-size:large;
+    font-size: large;
     color: white;
     font-family: cursive;
-    /* border: 2px solid red; */
 }
 
-.button:hover{
+.button:hover {
     opacity: 0.7;
 }
 
-.image{
+.image {
     margin-top: 1rem;
     width: 5rem;
     height: 5rem;
 }
 
-.heading{
+.heading {
     font-family: cursive;
     font-weight: lighter;
     text-align: center;
 }
 
-.no-results{
+.no-results {
     display: block;
-    /* border: 1px solid black; */
     width: 99vw;
     padding: 20px 0px;
 }
 
-.no-results img{
+.no-results img {
     border-radius: 40px;
-    /* border: 1px solid red; */
     height: 30%;
     width: 40%;
 }
 
-.button-no-results{
+.button-no-results {
     display: block;
     min-width: 10rem;
     height: 2.5rem;
@@ -99,13 +95,13 @@ body{
     font-family: cursive;
 }
 
-.a-no-results{
+.a-no-results {
     text-decoration: none;
-    font-size:large;
+    font-size: large;
     color: white;
     font-family: cursive;
 }
 
-.button-no-results:hover{
+.button-no-results:hover {
     background-color: #000000c4;
 }
