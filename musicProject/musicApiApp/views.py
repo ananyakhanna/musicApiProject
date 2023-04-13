@@ -16,6 +16,7 @@ def search_results(request):
         results = data['results']
 
     context = {
+        'search_term': search_term,
         'results': results
     }
     return render(request, 'search_results.html', context)

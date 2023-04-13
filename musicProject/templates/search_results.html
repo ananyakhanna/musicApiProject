@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,13 @@
     <link rel="stylesheet" href="{% static 'css/styleSearchResults.css' %}">
     <title>Search Results</title>
 </head>
+
 <body>
-    <h1>Search Results</h1>
+    <h1 class="heading">Search Results for "{{search_term}}"</h1>
     <div class="container">
         {% if results %}
         {% for i in results %}
         <div class="card">
-            
             <img src="{{i.artworkUrl60}}" alt="error" class="image">
             <p class="title">
                 <b>Artist Name: </b>{{i.artistName}}
@@ -22,12 +23,20 @@
             <p class="title">
                 <b>Collection Name: </b>{{i.collectionName}}
             </p>
-            <button type="submit" class="button"><a href="{{i.collectionViewUrl}}" target="_blank" class="a"> Go to Collection</a></button>
+            <button type="submit" class="button"><a href="{{i.collectionViewUrl}}" target="_blank" class="a"> Go to
+                    Collection</a></button>
         </div>
-            {% endfor %}
-            {% else %}
-            <div></div>
-            {% endif %}
+        {% endfor %}
     </div>
+    {% else %}
+    <div class="no-results">
+        <center>
+            <img src="{% static 'images/no-results.webp' %}" alt="error">
+        </center>
+        <button type="submit" class="button-no-results"> <a href="{%url 'home' %}" class="a-no-results">Search
+                Again</a></button>
+    </div>
+    {% endif %}
 </body>
+
 </html>
